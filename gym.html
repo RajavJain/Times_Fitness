@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Times Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('gym1.jpeg'); 
+            /* filter: invert(100%); */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: rgb(78,29,44);
+            font-family: 'Oswald', sans-serif;
+        }
+        .left{
+            display: inline-block;/*ye poora line nhi lega bas jitne mai matter likha h wohi lega bs---useful hai
+            /* border: 2px solid blueviolet; */
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+        .left img{
+            width: 157px;
+            filter: invert(100%);
+        }
+
+        .centre{
+            display: inline-block;
+            /* border: 2px solid rgb(241 ,7 ,7); */
+            border-radius: 48px;
+            position: absolute;
+            width: 33%;
+            top: 10px;
+            left: 520px;
+            background-color: #9bb48c;
+
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid rgb(43, 226, 119); */
+            position: absolute;
+            top: 14px;
+            left: 1287px;
+        }
+        .navbar{
+            margin: 4px;
+            
+        }
+        
+        .navbar li{
+            display: inline-block;
+            font-size: large;
+            margin: 4px;
+        } 
+
+        .navbar li a{
+            color: rgb(50, 96, 235);
+            text-decoration: none;
+            padding: 4px 17px ;
+        }
+
+        .navbar a:hover{
+            color:rgb(9, 243, 20);
+
+        }
+        .btn{
+            background-color: #9bb48c;
+            color :#3461e9;
+            border-radius: 10px;
+            font-size: 19px;
+            cursor: pointer;
+            font-family: 'Oswald', sans-serif;
+}
+        .btn:hover{
+            background-color: rgb(9, 243, 20);
+        }
+
+        .container{
+            border: 3px solid rgb(0, 0, 0);
+            position: absolute;
+            left: 190px;
+            top: 226px;
+            border-radius: 62px;
+            padding: 45px;
+            margin: -50px;
+            width: 412px;
+            height: 350px;
+        }
+        .form_group input{
+            text-align: center;
+            display: block;
+            margin: 10px;
+            padding: 2px;
+            border: 2px solid black;
+            width: 334px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: 'Oswald', sans-serif;
+        }
+       /* .container h1{
+            /* text-align: center;
+        } */
+
+        .container .btn{
+            display: block;
+            width: 360px;
+            /* margin: auto; */ 
+        }
+        
+    </style>
+</head>
+
+<body>
+        <header class="header">
+
+            <div class="left">
+            <img src="logo.png" alt="">
+            </div>
+
+            <div class="centre">
+            <ul class="navbar">
+                <li>
+                   <a href="#">Home</a> 
+                </li>
+                <li>
+                    <a href="#">About</a> 
+                </li>
+                <li>
+                    <a href="#">Location</a> 
+                </li>
+                <li>
+                    <a href="#">Contact us</a> 
+                </li>
+            </ul>
+            </div>
+
+            <div class="right">
+            <button class="btn">
+                Call Us-- 9696X837XX
+            </button>
+            </div>
+        </header>
+
+        <div class="container">
+            <h1>Join the best Gym of Banda now</h1>
+            <form action="noaction.php">
+                <div class="form_group">
+                    <input type="text" placeholder="Enter your Name">
+                    <input type="text" placeholder="Enter your Age">
+                    <input type="text" placeholder="Enter your Gender">
+                    <input type="text" placeholder="Enter your Locality">
+                    <input type="text" placeholder="Enter your Weight">
+                    <input type="text" placeholder="Enter your Mobile no.">
+                </div>
+                <button class="btn"> Submit</button>
+            </form>
+        </div>
+</body>
+</html>
